@@ -262,7 +262,7 @@ Discord Username:
 > `noxiousvex`
 
 GitHub:
-> Add repository URL
+> [Add repository URL](https://github.com/Noxious-Vex/MegingjordReforged)
 
 Thunderstore:
 > Add release URL
