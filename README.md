@@ -265,4 +265,4 @@ GitHub:
 > [MegingjordReforged](https://github.com/Noxious-Vex/MegingjordReforged)
 
 Thunderstore:
-> Add release URL
+> [MegingjordReforged](https://thunderstore.io/c/valheim/p/NoxiousVex/MegingjordReforged/)
