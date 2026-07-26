@@ -133,14 +133,14 @@ Developer Note:
 
 ### Dependencies
 
-* `BepInEx` - https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/
-* `Jötunn` - https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/
+* [BepInEx](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/)
+* [Jötunn](https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/)
 
 ### Confirmed Compatible:
 
-* `AzuExtendedPlayerInventory` by Azumatt
-* `TradersExtended` by shudnal
-* `ExtraSlots` by shudnal
+* [AzuExtendedPlayerInventory](https://thunderstore.io/c/valheim/p/Azumatt/AzuExtendedPlayerInventory/) by Azumatt
+* [TradersExtended](https://thunderstore.io/c/valheim/p/shudnal/TradersExtended/) by shudnal
+* [ExtraSlots](https://thunderstore.io/c/valheim/p/shudnal/ExtraSlots/) by shudnal
 
 ### UnCompatible Mods:
 
@@ -233,8 +233,8 @@ Created by:
 **Noxious Vex**
 
 Built using:
-• BepInEx
-• Jötunn
+• [BepInEx](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/)
+• [Jötunn](https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/)
 • Harmony
 
 ---
@@ -262,7 +262,7 @@ Discord Username:
 > `noxiousvex`
 
 GitHub:
-> [Add repository URL](https://github.com/Noxious-Vex/MegingjordReforged)
+> [MegingjordReforged](https://github.com/Noxious-Vex/MegingjordReforged)
 
 Thunderstore:
 > Add release URL
