@@ -23,6 +23,10 @@ namespace MegingjordReforged
             "Megingjord Reforged: Enhanced Belt Variants";
 
 
+        public const string ModAuthor = 
+            "Noxious Vex";
+
+
         public const string ModVersion =
             "1.0.0";
 
@@ -144,7 +148,7 @@ namespace MegingjordReforged
 
 
                 ModLogger.LogStart(
-                    $"{ModName} : v{ModVersion} loaded successfully."
+                    $"{ModName} : v{ModVersion} by {ModAuthor} has loaded successfully."
                 );
 
 
