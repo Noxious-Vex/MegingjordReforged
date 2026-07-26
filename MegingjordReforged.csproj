@@ -1,0 +1,242 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>MegingjordReforged</RootNamespace>
+    <AssemblyName>MegingjordReforged</AssemblyName>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+
+    <!-- Prevent PDB generation from being copied into Release -->
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+    <OutputPath>Build\Debug\</OutputPath>
+
+    <!-- Keep debugging information during development -->
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Portable</DebugType>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+    <OutputPath>Build\Release\</OutputPath>
+
+    <!-- Release should only contain the DLL -->
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Icons\Aedigjord.png" />
+    <None Remove="Assets\Icons\Alagjord.png" />
+    <None Remove="Assets\Icons\Fornmegingjord.png" />
+    <None Remove="Assets\Icons\Megingjord.png" />
+    <None Remove="Assets\Icons\Seidgjord.png" />
+    <None Remove="Assets\Icons\Skadigjord.png" />
+    <None Remove="Assets\Icons\Valgautrgjord.png" />
+
+    <None Remove="Assets\Textures\Aedigjord_d.png" />
+    <None Remove="Assets\Textures\Alagjord_d.png" />
+    <None Remove="Assets\Textures\Fornmegingjord_d.png" />
+    <None Remove="Assets\Textures\Megingjord_d.png" />
+    <None Remove="Assets\Textures\Seidgjord_d.png" />
+    <None Remove="Assets\Textures\Skadigjord_d.png" />
+    <None Remove="Assets\Textures\Valgautrgjord_d.png" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Icons\Aedigjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Aedigjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Icons\Alagjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Alagjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Icons\Fornmegingjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Fornmegingjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Icons\Megingjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Megingjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Icons\Seidgjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Seidgjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Icons\Skadigjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Skadigjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Icons\Valgautrgjord.png">
+      <LogicalName>MegingjordReforged.Assets.Icons.Valgautrgjord.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Aedigjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Aedigjord_d.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Alagjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Alagjord_d.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Fornmegingjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Fornmegingjord_d.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Megingjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Megingjord_d.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Seidgjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Seidgjord_d.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Skadigjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Skadigjord_d.png</LogicalName>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Assets\Textures\Valgautrgjord_d.png">
+      <LogicalName>MegingjordReforged.Assets.Textures.Valgautrgjord_d.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>References\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_utils">
+      <HintPath>..\..\..\..\SteamLibrary\steamapps\common\Valheim\valheim_Data\Managed\assembly_utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="assembly_valheim">
+      <HintPath>References\assembly_valheim.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="Assembly-CSharp">
+      <HintPath>References\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="BepInEx">
+      <HintPath>References\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="Jotunn">
+      <HintPath>References\Jotunn.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>References\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>References\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>References\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>References\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>References\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="netstandard">
+      <HintPath>References\netstandard.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Core">
+      <HintPath>References\System.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Data">
+      <HintPath>References\System.Data.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Drawing">
+      <HintPath>References\System.Drawing.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>References\System.IO.Compression.FileSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Numerics">
+      <HintPath>References\System.Numerics.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>References\System.Runtime.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Xml">
+      <HintPath>References\System.Xml.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="System.Xml.Linq">
+      <HintPath>References\System.Xml.Linq.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="mscorlib">
+      <HintPath>References\mscorlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="CHANGELOG.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <DefaultItemExcludes>
+      $(DefaultItemExcludes);
+      Build\**;
+    </DefaultItemExcludes>
+  </PropertyGroup>
+
+</Project>

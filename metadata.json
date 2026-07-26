@@ -1,0 +1,10 @@
+{
+  "name": "MegingjordReforged",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "description": "Enhanced belt variants expanding the legendary Megingjord with specialized Viking-themed equipment.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2333",
+    "ValheimModding-Jotunn-2.29.2"
+  ]
+}
