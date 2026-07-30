@@ -84,14 +84,14 @@ namespace MegingjordReforged.Source.StatusEffects
                 Skills.SkillType.WoodCutting;
 
             m_skillLevelModifier =
-                25f;
+                effects.WoodcuttingSkillLevelIncrease;
 
 
             m_skillLevel2 =
                 Skills.SkillType.Pickaxes;
 
             m_skillLevelModifier2 =
-                25f;
+                effects.PickaxeSkillLevelIncrease;
         }
     }
 }

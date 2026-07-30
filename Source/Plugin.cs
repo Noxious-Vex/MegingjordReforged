@@ -28,7 +28,7 @@ namespace MegingjordReforged
 
 
         public const string ModVersion =
-            "1.0.0";
+            "1.1.0";
 
 
 

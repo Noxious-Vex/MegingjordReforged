@@ -132,6 +132,193 @@ namespace MegingjordReforged.Source.Registry
 
                         Description =
                             "Attack stamina consumption modifier."
+                    },
+                    ///
+                    ///
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "SwordSkillLevelIncrease",
+
+                        DefaultValue = 20f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Swords Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "ClubSkillLevelIncrease",
+
+                        DefaultValue = 30f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Clubs Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "ElementalMagicSkillLevelIncrease",
+
+                        DefaultValue = 30f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Elemental Magic Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "BloodMagicSkillLevelIncrease",
+
+                        DefaultValue = 20f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Blood Magic Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "SwimmingSkillLevelIncrease",
+
+                        DefaultValue = 35f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Swimming Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "FishingSkillLevelIncrease",
+
+                        DefaultValue = 20f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Fishing Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "BowSkillLevelIncrease",
+
+                        DefaultValue = 20f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Bows Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "CrossbowSkillLevelIncrease",
+
+                        DefaultValue = 35f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Crossbows Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "WoodcuttingSkillLevelIncrease",
+
+                        DefaultValue = 25f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Woodcutting Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "PickaxeSkillLevelIncrease",
+
+                        DefaultValue = 25f,
+
+                        MinimumValue = 0f,
+
+                        MaximumValue = 99f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Increases the Pickaxes (Mining) Skill level."
+                    },
+
+
+                    new BeltEffectDefinition
+                    {
+                        EffectName = "AdrenalineGainModifier",
+
+                        DefaultValue = 100f,
+
+                        MinimumValue = -100f,
+
+                        MaximumValue = 500f,
+
+                        AllowZero = true,
+
+                        Description =
+                            "Modifies the Adrenaline gain by percentage."
                     }
                 };
         }

@@ -26,6 +26,18 @@ namespace MegingjordReforged.Source.Utilities
     /// 3.50 = +250%
     /// 0.75 = -25%
     ///
+    /// Percentage based gain modifiers use direct
+    /// percentage conversion:
+    ///
+    /// 100 = 1.00f
+    /// 50  = 0.50f
+    /// 25  = 0.25f
+    ///
+    /// Used for:
+    ///
+    /// - Adrenaline Gain
+    /// - Other direct gain modifiers
+    ///
     /// Stamina consumption systems use direct
     /// percentage modifiers:
     ///
@@ -88,20 +100,18 @@ namespace MegingjordReforged.Source.Utilities
 
 
         /*
-         * Usage Conversion
+         * Percentage Gain Conversion
          *
          * Used for:
          *
-         * - Attack stamina
-         * - Run stamina
-         * - Jump stamina
-         * - Dodge stamina
-         * - Sneak stamina
+         * - Adrenaline Gain
+         * - Direct percentage gain modifiers
          *
          * Examples:
          *
-         * -35 -> -0.35
-         * 0   -> 0
+         * 100 -> 1.00
+         * 50  -> 0.50
+         * 25  -> 0.25
          *
          */
 

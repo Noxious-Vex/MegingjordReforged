@@ -16,9 +16,6 @@ namespace MegingjordReforged.Source.Managers
     /// </summary>
     public static class ConfigResolveManager
     {
-        /// <summary>
-        /// Determines whether runtime server overrides exist.
-        /// </summary>
         public static bool HasServerOverrides =>
             RuntimeConfigOverride.Contains(
                 "General.EnableMod"
@@ -26,11 +23,6 @@ namespace MegingjordReforged.Source.Managers
 
 
 
-        /// <summary>
-        /// Gets a runtime configuration value.
-        ///
-        /// Server values override local values.
-        /// </summary>
         public static T Get<T>(
             string key,
             T localValue)
@@ -43,17 +35,6 @@ namespace MegingjordReforged.Source.Managers
 
 
 
-        /// <summary>
-        /// Gets active belt configuration.
-        ///
-        /// Supports:
-        ///
-        /// - Local configuration
-        /// - Server synchronized overrides
-        ///
-        /// Effects are resolved individually so
-        /// multiplayer servers can enforce balance.
-        /// </summary>
         public static IndividualBeltOptions GetBeltOptions(
             string beltName)
         {
@@ -61,7 +42,6 @@ namespace MegingjordReforged.Source.Managers
                 ConfigManager.Current.Belts.GetBeltOptions(
                     beltName
                 );
-
 
 
             return new IndividualBeltOptions
@@ -177,6 +157,88 @@ namespace MegingjordReforged.Source.Managers
                     Get(
                         $"Belts.{beltName}.Effects.SneakStaminaUseModifier",
                         localEffects.SneakStaminaUseModifier
+                    ),
+
+
+
+                /*
+                 * Skill Level Bonuses
+                 */
+
+                SwordSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.SwordSkillLevelIncrease",
+                        localEffects.SwordSkillLevelIncrease
+                    ),
+
+
+                ClubSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.ClubSkillLevelIncrease",
+                        localEffects.ClubSkillLevelIncrease
+                    ),
+
+
+                ElementalMagicSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.ElementalMagicSkillLevelIncrease",
+                        localEffects.ElementalMagicSkillLevelIncrease
+                    ),
+
+
+                BloodMagicSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.BloodMagicSkillLevelIncrease",
+                        localEffects.BloodMagicSkillLevelIncrease
+                    ),
+
+
+                BowSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.BowSkillLevelIncrease",
+                        localEffects.BowSkillLevelIncrease
+                    ),
+
+
+                CrossbowSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.CrossbowSkillLevelIncrease",
+                        localEffects.CrossbowSkillLevelIncrease
+                    ),
+
+
+                SwimmingSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.SwimmingSkillLevelIncrease",
+                        localEffects.SwimmingSkillLevelIncrease
+                    ),
+
+
+                FishingSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.FishingSkillLevelIncrease",
+                        localEffects.FishingSkillLevelIncrease
+                    ),
+
+
+                WoodcuttingSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.WoodcuttingSkillLevelIncrease",
+                        localEffects.WoodcuttingSkillLevelIncrease
+                    ),
+
+
+                PickaxeSkillLevelIncrease =
+                    Get(
+                        $"Belts.{beltName}.Effects.PickaxeSkillLevelIncrease",
+                        localEffects.PickaxeSkillLevelIncrease
+                    ),
+
+
+                AdrenalineGainModifier =
+                    Get(
+                        $"Belts.{beltName}.Effects.AdrenalineGainModifier",
+                        localEffects.AdrenalineGainModifier
                     )
             };
         }

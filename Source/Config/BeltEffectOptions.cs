@@ -54,5 +54,37 @@
 
         public float SneakStaminaUseModifier { get; set; } = 0f;
 
+
+        public float SwordSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float ClubSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float ElementalMagicSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float BloodMagicSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float BowSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float CrossbowSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float SwimmingSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float FishingSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float WoodcuttingSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float PickaxeSkillLevelIncrease { get; set; } = 0f;
+
+
+        public float AdrenalineGainModifier { get; set; } = 0f;
     }
 }

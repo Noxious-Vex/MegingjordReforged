@@ -6,15 +6,13 @@ using MegingjordReforged.Source.Config;
 using MegingjordReforged.Source.Definitions;
 using MegingjordReforged.Source.Utilities;
 
-
 namespace MegingjordReforged.Source.Managers
 {
     public static class ConfigManager
     {
         public static MegingjordConfig Current { get; private set; } = new();
 
-
-        public static string ConfigPath { get; private set; } = string.Empty;
+    public static string ConfigPath { get; private set; } = string.Empty;
 
 
 
@@ -44,12 +42,12 @@ namespace MegingjordReforged.Source.Managers
 
                 string[] beltOrder =
                 {
-                    "Aedigjord",
-                    "Seidgjord",
-                    "Skadigjord",
-                    "Alagjord",
-                    "Fornmegingjord"
-                };
+                "Aedigjord",
+                "Seidgjord",
+                "Skadigjord",
+                "Alagjord",
+                "Fornmegingjord"
+            };
 
 
                 foreach (string belt in beltOrder)
@@ -244,13 +242,33 @@ namespace MegingjordReforged.Source.Managers
         private static BeltEffectOptions LoadFornmegingjordEffects(
             ConfigFile configFile)
         {
+            string section =
+                "Belts - Fornmegingjord - Effects";
+
+
             return new BeltEffectOptions
             {
                 CarryWeight =
                     configFile.Bind(
-                        "Belts - Fornmegingjord - Effects",
+                        section,
                         "Carry Weight",
                         450f
+                    ).Value,
+
+
+                WoodcuttingSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Woodcutting Skill Level Increase",
+                        20f
+                    ).Value,
+
+
+                PickaxeSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Pickaxe Skill Level Increase",
+                        20f
                     ).Value
             };
         }
@@ -292,7 +310,28 @@ namespace MegingjordReforged.Source.Managers
                         section,
                         "Attack Stamina Use Modifier",
                         -30f
-                    )
+                    ),
+
+                ClubSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Club Skill Level Increase",
+                        30f
+                    ).Value,
+
+                SwordSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Sword Skill Level Increase",
+                        20f
+                    ).Value,
+
+                AdrenalineGainModifier =
+                    configFile.Bind(
+                        section,
+                        "Adrenaline Gain Modifier",
+                        1f
+                    ).Value
             };
         }
 
@@ -335,7 +374,21 @@ namespace MegingjordReforged.Source.Managers
                         section,
                         "Eitr Regen Modifier",
                         100f
-                    )
+                    ),
+
+                ElementalMagicSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Elemental Magic Skill Level Increase",
+                        30f
+                    ).Value,
+
+                BloodMagicSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Blood Magic Skill Level Increase",
+                        20f
+                    ).Value
             };
         }
 
@@ -378,7 +431,21 @@ namespace MegingjordReforged.Source.Managers
                         section,
                         "Jump Stamina Use Modifier",
                         -10f
-                    )
+                    ),
+
+                BowSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Bow Skill Level Increase",
+                        20f
+                    ).Value,
+
+                CrossbowSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Crossbow Skill Level Increase",
+                        35f
+                    ).Value
             };
         }
 
@@ -387,7 +454,34 @@ namespace MegingjordReforged.Source.Managers
         private static BeltEffectOptions LoadAlagjordEffects(
             ConfigFile configFile)
         {
-            return new BeltEffectOptions();
+            string section =
+                "Belts - Alagjord - Effects";
+
+
+            return new BeltEffectOptions
+            {
+
+                CarryWeight =
+                    LoadCarryWeight(
+                        configFile,
+                        section
+                    ),
+
+                SwimmingSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Swimming Skill Level Increase",
+                        35f
+                    ).Value,
+
+
+                FishingSkillLevelIncrease =
+                    configFile.Bind(
+                        section,
+                        "Fishing Skill Level Increase",
+                        20f
+                    ).Value
+            };
         }
 
 
@@ -406,7 +500,7 @@ namespace MegingjordReforged.Source.Managers
             return configFile.Bind(
                 section,
                 "Carry Weight",
-                150f
+                250f
             ).Value;
         }
 
@@ -454,4 +548,5 @@ namespace MegingjordReforged.Source.Managers
             };
         }
     }
+
 }

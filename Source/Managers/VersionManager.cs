@@ -20,7 +20,7 @@ namespace MegingjordReforged.Source.Managers
          *
          * structure changes.
          */
-        private const int CurrentSchemaVersion = 1;
+        private const int CurrentSchemaVersion = 2;
 
 
 

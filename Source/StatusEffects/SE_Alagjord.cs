@@ -106,14 +106,14 @@ namespace MegingjordReforged.Source.StatusEffects
                 Skills.SkillType.Swim;
 
             m_skillLevelModifier =
-                35f;
+                effects.SwimmingSkillLevelIncrease;
 
 
             m_skillLevel2 =
                 Skills.SkillType.Fishing;
 
             m_skillLevelModifier2 =
-                20f;
+                effects.FishingSkillLevelIncrease;
         }
     }
 }

@@ -256,6 +256,82 @@ namespace MegingjordReforged.Source.Registry
                     "Sneak Stamina Use Modifier",
                     "SneakStaminaUseModifier"
                 );
+
+                RegisterEffect(
+                    belt,
+                    "Sword Skill Level Increase",
+                    "SwordSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Club Skill Level Increase",
+                    "ClubSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Elemental Magic Skill Level Increase",
+                    "ElementalMagicSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Blood Magic Skill Level Increase",
+                    "BloodMagicSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Bow Skill Level Increase",
+                    "BowSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Crossbow Skill Level Increase",
+                    "CrossbowSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Swimming Skill Level Increase",
+                    "SwimmingSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Fishing Skill Level Increase",
+                    "FishingSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Woodcutting Skill Level Increase",
+                    "WoodcuttingSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Pickaxe Skill Level Increase",
+                    "PickaxeSkillLevelIncrease"
+                );
+
+
+                RegisterEffect(
+                    belt,
+                    "Adrenaline Gain Modifier",
+                    "AdrenalineGainModifier"
+                );
             }
         }
 

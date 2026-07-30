@@ -1,6 +1,7 @@
 ﻿using MegingjordReforged.Source.Config;
 using MegingjordReforged.Source.Managers;
 using MegingjordReforged.Source.Utilities;
+using UnityEngine;
 
 
 namespace MegingjordReforged.Source.StatusEffects
@@ -109,14 +110,14 @@ namespace MegingjordReforged.Source.StatusEffects
                 Skills.SkillType.Clubs;
 
             m_skillLevelModifier =
-                30f;
+                effects.ClubSkillLevelIncrease;
 
 
             m_skillLevel2 =
                 Skills.SkillType.Swords;
 
             m_skillLevelModifier2 =
-                20f;
+                effects.SwordSkillLevelIncrease;
 
 
 
@@ -127,7 +128,11 @@ namespace MegingjordReforged.Source.StatusEffects
              */
 
             m_adrenalineModifier =
-                1f;
+                ConfigValueConverter.PercentageToMultiplier(Mathf.Clamp(effects.AdrenalineGainModifier,
+                    -50f,
+                    500f
+                )
+            );
         }
     }
 }

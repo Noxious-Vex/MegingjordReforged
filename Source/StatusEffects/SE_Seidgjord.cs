@@ -96,14 +96,14 @@ namespace MegingjordReforged.Source.StatusEffects
                 Skills.SkillType.ElementalMagic;
 
             m_skillLevelModifier =
-                30f;
+                effects.ElementalMagicSkillLevelIncrease;
 
 
             m_skillLevel2 =
                 Skills.SkillType.BloodMagic;
 
             m_skillLevelModifier2 =
-                20f;
+                effects.BloodMagicSkillLevelIncrease;
         }
     }
 }

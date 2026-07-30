@@ -37,12 +37,14 @@ A combat-focused belt designed for warriors seeking increased strength and endur
 
 Features:
 
-* Increased carry capacity
-* Increased armor
-* Improved health regeneration
-* Increased Club skill effectiveness
-* Increased Sword skill effectiveness
-* Increased adrenaline gain
+* +25 armor
+* -25% health regeneration
+* +30 Club skill level
+* +20 Sword skill level
+* +100 adrenaline gain
+* +250 Maximum carry weight
+
+> Please not not all Features of the belt may be up to date on the Documentation. I'll try to update whatever is missing next update.
 
 ---
 
@@ -54,9 +56,14 @@ A mystical belt designed for magic users and Eitr-based builds.
 
 Features:
 
-* Improved Eitr regeneration
-* Increased ElementalMagic skill effectiveness
-* Increased BloodMagic skill effectiveness
+* -25% Health regeneration
+* +25% Stamina regeneration
+* +100% Eitr regeneration
+* +30 ElementalMagic skill level
+* +20 BloodMagic skill level
+* +250 Maximum carry weight
+
+> Please not not all Features of the belt may be up to date on the Documentation. I'll try to update whatever is missing next update.
 
 ---
 
@@ -68,10 +75,14 @@ A mobility-focused belt designed around speed, stamina efficiency, and explorati
 
 Features:
 
-* Improved stamina regeneration
+* +100% Stamina regeneration
 * Reduced stamina costs for movement-related actions
-* Increased Bow skill effectiveness
-* Increased Crossbow skill effectiveness
+* +30% Perice damage increase
+* +25 Bow skill level
+* +35 Crossbow skill level
+* +250 Maximum carry weight
+
+> Please not not all Features of the belt may be up to date on the Documentation. I'll try to update whatever is missing next update.
 
 ---
 
@@ -83,11 +94,13 @@ A water-focused belt designed for sailors and explorers.
 
 Features:
 
-* Improved stamina regeneration
+* +100% stamina regeneration
 * Reduced stamina costs to swimming
-* Swimming bonuses
-* Fishing bonuses
-* Increased Swimming skill effectiveness
+* +35 Swimming skill level
+* +20 Fishing skill level
+* +250 Maximum carry weight
+
+> Please not not all Features of the belt may be up to date on the Documentation. I'll try to update whatever is missing next update.
 
 ---
 
@@ -99,9 +112,11 @@ A legendary version of the original Megingjord focused on Gathering resources.
 
 Features:
 
-* Enhanced carry capacity
-* Improved woodcutting efficiency
-* Improved mining efficiency
+* +25 woodcutting skill level
+* +25 mining skill level
+* +450 Maximum carry weight
+
+> Please not not all Features of the belt may be up to date on the Documentation. I'll try to update whatever is missing next update.
 
 ---
 
@@ -123,6 +138,7 @@ Config Synchronization includes:
 * Crafting station settings
 * Crafting station levels
 * Belt effect modifiers
+* Belt Skill level boosts
 
 Developer Note:
 > Version tracking is `Major.Minor.Patch` - Server and Client must be on the same version.
@@ -221,9 +237,17 @@ Includes:
 # Future Plans
 
 * Additional belt variants
-* Progression-based upgrade paths
-* Additional configuration options
+ * *these biome themed belts will remain much much weaker as they are intended for earlier game progression, and easier accessibility.*
+ * *these planned belts are still being tweaked for balance but I'll provide the current potential plan of these, open to suggestions and feedback.*
+   * Craftable Leather Belt - +50 Weight, Potential small attribute towards early game mobility.
+   * Craftable Troll hide Belt - +50 Weight, can be used as 1 of 4 piece troll hide set for the set effect.
+   * Craftable Root Belt - +50 Weight, still to be determined.
+   * Craftable Fenris hair Belt - +50 Weight, still to be determined.
+   * Craftable Lox pelt Belt - +50% Weight, still to be determined.
+   * Craftable Scale hide Belt - +50% Weight, still to be determined.
+   * Craftable Askvin hide Belt - +50% Weight, still to be determined.
 * Expanded advanced features
+  * Some Belts will be offered an Alternative Texture Option under the Advanced Features.
 
 ---
 

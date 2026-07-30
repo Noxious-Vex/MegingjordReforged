@@ -130,14 +130,14 @@ namespace MegingjordReforged.Source.StatusEffects
                 Skills.SkillType.Bows;
 
             m_skillLevelModifier =
-                20f;
+                effects.BowSkillLevelIncrease;
 
 
             m_skillLevel2 =
                 Skills.SkillType.Crossbows;
 
             m_skillLevelModifier2 =
-                35f;
+                effects.CrossbowSkillLevelIncrease;
         }
     }
 }
